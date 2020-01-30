@@ -264,7 +264,7 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url(/img/bg-01.jpg);
+    background-image: url(img/bg-01.jpg);
 }
 
 .form {
