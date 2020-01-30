@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+    --success-color:rgb(35, 224, 129);
+    --error-color: rgb(238, 58, 34);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #222 url(img/bg-01.jpg);
+    color: #fff;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+    overflow-x: hidden;
+}
+
+body.show-nav {
+    transform: translateX(-200px);
+}
+
+nav {
+    background-color: var(--success-color);
+    border-left: 2px rgba(200,200,200,0.1);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    transform: translateX(200px);
+    z-index: 100;
+}
+
+nav .logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img {
+    height: 75px;
+    width: 75px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+nav ul li:first-of-type {
+    border-top: 2px solid rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.toggle {
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.toggle:focus {
+    outline: none;
+}
+
+p {
+    font-size: xx-large;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.slide .content {
+    font-family: 'Kaushan Script', cursive;
+    position: absolute;
+    bottom: 900x;
+    left: -600px;
+    opacity: 0;
+    /* width: 600px;
+    height: 700px; */
+    background-color: lightgoldenrodyellow;
+    color: #333;
+    padding: 25px 50px;
+}
+
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out;
+}
+
+.buttons button#next {
+    position: absolute;
+    top: 91%;
+    left: 2%;
+}
+
+.buttons button {
+    border: none;
+    background-color: yellow;
+    color: #333;
+    cursor: pointer;
+    padding: 25px 50px;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Kaushan Script', cursive;
+    font-size: large;
+    box-shadow: 0px 2px 3px rgba(3,3,3,.3);
+}
+
+.buttons button:hover {
+    background-color: gold;
+    color: #333;
+}
+
+.slide .content h1 {
+    margin-bottom: 10px;
+}
+
+.slide:first-child {
+    background: url('img/LlamaFrameOneWide-01.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+    background: url('img/LlamaFrameTwo-01.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('img/LlamaFrameThree-01.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+    background: url('img/LlamaFrameFour-01.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(5) {
+    background: url('img/LlamaFrameFive-01.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(6) {
+    background: url('img/LlamaFrameSix-01.jpg') no-repeat center top/cover;
+}
+
+.profile {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.leftProfile {
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 0px 125px;
+    background: rgb(71,0,185);
+    background: linear-gradient(30deg, rgba(71,0,185,1) 0%, rgba(98,0,255,1) 35%, rgba(127,47,255,1) 100%);
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+}
+
+.idPhoto {
+    position: relative;
+    display: flex;
+    height: 425px;
+    width: 425px;
+    border-radius: 50%;
+    background-color: var(--success-color);
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.idPhoto img {
+    height: 75%;
+    width: 75%;
+}
+
+.contactButton {
+    border: none;
+    background-color: var(--success-color);
+    color: #fff;
+    cursor: pointer;
+    padding: 25px 50px;
+    border-radius: 50px;
+    outline: none;
+    font-size: large;
+    margin: 40px;
+}
+
+.contactButton:hover {
+    background-color: teal;
+}
+
+.rightContent {
+    background: #fff;
+    color: #333;
+    height: 800px;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(3,3,3,.7);
+    position: relative;
+}
+
+.rightProfile {
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* z-index: -1; */
+    background-color: #222;
+    position: relative;
+    background-image: url(/img/bg-01.jpg);
+}
+
+.form {
+    padding: 75px;
+}
+
+.form h2 {
+    font-size: xx-large;
+    text-align: center;
+    margin: 0 0 45px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: var(--success-color);
+    border: 2px solid var(--success-color);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 45px;
+    width: 100%;
+}
+
+/* test */
+/* Footer */
+.footer {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.footer,
+.footer a {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0px 200px 0px;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9;
+}

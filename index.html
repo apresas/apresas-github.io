@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FullSliderApp</title>
+    <script src="https://kit.fontawesome.com/151598a398.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="toggle" id="toggle">
+        <i class= 'fa fa-bars fa-2x'></i>
+    </button>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="slider">
+        <div class="slide current">
+            <div class="content">
+                <h1>Once Upon a Time...</h1>
+                <p>There was a young Llama bound and determined to make the world more beautiful.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <p>No matter where he was or what he did there was no escaping the colors that swirled in his eyes.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <p>So he searched the planet for the perfect canvas</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <p>But he would never find it. Until one fateful night something strange happened.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <p>Startled he quickly awoke from his slumber to check out the commotion. To his suprise there was a device that he'd never seen before. Then as fear of the unknown sweep over him, he pressed the button. </p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <p>Just like the the device opened up and spewed out more colors then he had ever seen. Painting the sky and his world. Now he could finally rest this this was the prefect canvas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="next">Continue</button>
+    </div>
+    <div class="profile">
+    <div class="leftProfile">
+        <div class="leftContent">
+            <h1>Meet Larry Llama</h1>
+            <div class="idPhoto">
+                <img src="img/profile.svg" alt="id photo">
+            </div>
+            <p>Help Larry make the world more beautiful.</p>
+        </div>
+    </div>
+    <div class="rightProfile">
+        <div class="rightContent"><form class="form" id="form">
+           <h2>Register</h2> 
+           <div class="form-control">
+               <label for='username'>Username</label>
+               <input type="text" id='username' placeholder="Enter username">
+               <small>Error</small>
+           </div>
+           <div class="form-control">
+               <label for='email'>Email</label>
+               <input type="text" id='email' placeholder="Enter email">
+               <small>Error</small>
+           </div>
+           <div class="form-control">
+               <label for='password'>Password</label>
+               <input type="password" id='password' placeholder="Enter password">
+               <small>Error</small>
+           </div>
+           <div class="form-control">
+               <label for='Confirm Password'>Confirm password</label>
+               <input type="password" id='password2' placeholder="Enter password again">
+               <small>Error</small>
+           </div>
+           <button type='submit'>Submit</button>
+        </form>
+    </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>Questions? Call 1-800-GoLlama</p>
+    <div class="footer-cols">
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Ways to Watch</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Buy Gift Cards</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Legal Notices</a></li>
+        </ul>
+    </div>
+</footer>
+    <script src="form.js"></script>
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
