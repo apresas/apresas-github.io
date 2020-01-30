@@ -127,8 +127,6 @@ h1 {
     bottom: 900x;
     left: -600px;
     opacity: 0;
-    /* width: 600px;
-    height: 700px; */
     background-color: lightgoldenrodyellow;
     color: #333;
     padding: 25px 50px;
@@ -265,8 +263,6 @@ h1 {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    /* z-index: -1; */
-    background-color: #222;
     position: relative;
     background-image: url(/img/bg-01.jpg);
 }
